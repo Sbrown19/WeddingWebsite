@@ -1,0 +1,79 @@
+body {
+  background-color: #000080;
+}
+
+h1 {
+	color: #87868c;
+	font-size:26px;
+}
+
+p {
+	color: white;
+}
+
+/*The following are box model properties applied to images*/
+/* Ask megan about the colors around the picture*/
+img {
+	border:10px solid gray;
+	padding:20px;
+	background-color: white;
+	margin:20px 0;
+}
+
+img.imagefloatright{
+	float: right;
+	margin-left: 25px;
+}
+
+/* The following is an example of a pseudo class*/
+
+a{
+	color: red;
+}
+
+a:hover {
+	color: orange;
+}
+
+nav{
+	background-color: black;
+	line-height:300%;
+	border-left: 12px solid silver;
+}
+
+nav li{
+	display:inline;
+	padding-right:40px;
+}
+
+nav a { color:white;
+        text-decoration:none;
+}
+
+nav a:hover {
+	color: yellow;
+	background-color:green;
+	padding: 4px 8px;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-instagram {
+  background: #3B5998;
+  color: white;
+}

@@ -1,0 +1,153 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- Author: Skyler Brown, Megan Rowat
+          Date: November 16th, 2019
+          -->
+<html>
+<head>
+<!-- Talk to Megan About the title of each page. Double check if this is also rsvp page-->
+<title>Contacts/RSVP</title>
+
+
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Megan And Skylers Website">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	}
+	
+body  {
+		font-family: "Times New Roman", Times, serif;
+		font-size:125%;
+		color: black;
+		background-color:#000080;
+		}
+p {
+	color: black;
+}
+		
+		
+#formcontainer  {
+				background-color: #D3D3D3;
+				width: 800px;
+				margin: 10px auto;
+				padding: 20px;
+				border: 2px solid black;
+				border-radius: 15px;
+				}
+legend  {
+		width: 100%;
+		border-bottom: 1px dotted purple;
+		padding-bottom: 5px;
+		margin-bottom: 15px;
+		font-size:1.3em;
+		}
+		
+fieldset1  {
+			width: 25em;
+			margin: 20px;
+			}
+			
+fieldset1 div  {
+				margin: 5px 0;
+				display: flex;
+				align-items: center;
+				}
+				
+fieldset2  {
+			width: 30em;
+			margin: 20px;
+			}
+			
+fieldset2 div  {
+				margin: 5px 0;
+				display: flex;
+				align-items: top;
+				}
+				
+input, textarea, select  {
+						 font-size: 1.1em;
+						 padding: 2px 5px 4px;
+						 border-radius: 5px;
+						 margin-top:5px;
+						 order:2;
+						 flex: 1 1 auto;
+						}
+						
+label  {
+		order: 1;
+		width: 10em;
+		text-align: right;
+		padding-right: 0.5em;
+		}
+		
+input[type=submit], input[type=reset] {
+							 color: #87868c;
+							 background-color: #000080;
+							 border-radius: 50px;
+							 padding: 6px;
+							 width: 200px;
+							 margin-right: 30px;
+								}
+								
+input[type=submit]  {
+					margin-left: 250px;
+					}
+</style>
+</head>
+<body>
+
+<!-- what do we want on the contact page? Is this just a page to rsvp or other things as well?-->
+<nav>
+<ul>
+<li><a href="index.html">Home Page</a></li>
+<li><a href="rsvp.html">Contact/RSVP</a></li>
+<li><a href="ourStory.html">Our Story</a></li>
+<li><a href="info.html">Information</a></li>
+</ul>
+</nav>
+
+<div id="formcontainer">
+<form id="contact_form" method="post" action="rsvp.php">
+<legend>Contact Us!</legend>
+<p style="font-style:italic;">RSVP here as well as contacting us if you have any questions. Please RSVP by September 1st.</p>
+
+<fieldset1>
+	<div>
+		<label for="firstname">First Name</label>
+		<input id="firstname" name="firstname" type="text">
+	</div>
+	
+	<div>
+		<label for="lastname">Last Name</label>
+		<input id="lastname" name="lastname" type="text">
+	</div>
+	
+	<div>
+		<label for="email">Email Address</label>
+		<input id="email" name="email" type="text" placeholder="name@anywhere.com">
+	</div>
+	
+
+</fieldset1>
+
+<filedset2>
+	<div>
+		<center><label for="message">Include all of the names from your save the date that are attending.</label></center>
+		<textarea id="message" name="message" rows="5" cols="73"></textarea>
+	</div>
+
+	<div style="text-align:right">
+		<input type="submit" id="button" name="button" value="Submit">
+		<input type="reset" id="button" name="button" value="Reset">
+	</div>
+</fieldset2>
+</div><!--close form container-->
+
+</body>
+</html>
